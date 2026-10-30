@@ -59,7 +59,7 @@ This is an example of one run, not a general performance estimate. The low repor
 
 ## How to run the notebook
 
-1. Open the [Spectra ML v2 notebook](https://drive.google.com/file/d/1M3YMe4WKXlD8cszug6jGbUvHJmmOPIIY/view?usp=drive_link) in GitHub and open it in Google Colab (or use a compatible Jupyter environment).
+1. Open the [Spectra ML v2 notebook](https://drive.google.com/file/d/1M3YMe4WKXlD8cszug6jGbUvHJmmOPIIY/view?usp=drive_link) in Google Colab.
 2. Run the dependency-installation and import cell, followed by the notebook cells in order.
 3. At the model-source prompt, choose one of the following:
    - `1` — attempt to load the shared model from its configured central Google Drive location.
