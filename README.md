@@ -269,6 +269,12 @@ The repository's `metadata.json` and `artifact_manifest.json` record the followi
 | Feature version in artifacts | 1.0.0 |
 | Conformational-corrector training samples in metadata | 643 |
 
+## Feedback error history
+
+<img width="1072" height="525" alt="learning_progress!!" src="https://github.com/user-attachments/assets/051923fc-c538-4347-838c-02101634454b" />
+
+The supplied feedback plot shows absolute prediction errors across feedback iterations. Errors are highly variable, with occasional large excursions; the moving average also fluctuates. This plot is useful for monitoring learning history, but it is not, by itself, a controlled test-set learning curve.
+
 These are artifact/manifest counts, not independently verified performance results. They do not substitute for reporting locked-test MAE, RMSE, R², sample inclusion/exclusion, reference-data provenance, and the exact model artifact used for a benchmark.
 
 ## Interpretation of confidence and applicability
