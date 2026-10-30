@@ -1,0 +1,395 @@
+✅ Global random seed set to 42
+============================================================
+SPECTRA ML v2.0 UV‑Vis Prediction tool
+AI results can be used for research / educational purposes only. Not for medical or regulatory use.
+Results may be inaccurate for molecules outside the training domain. Use with caution.
+Use the tool ethically and responsibly. Do not use for illegal or harmful purposes. Do not attempt to reverse-engineer or misuse the code.
+============================================================
+
+📂 Model source:
+  1) Load shared model from central Drive
+  2) Load from your personal Google Drive
+  3) Start fresh (no pre‑trained model)
+Enter choice (1/2/3): 2
+
+📂 Loading from Google Drive...
+Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount("/content/drive", force_remount=True).
+
+📂 Loading from Google Drive...
+Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount("/content/drive", force_remount=True).
+✅ ReactionEngine loaded (50 rules).
+✅ ReactionFeasibilityML loaded
+✅ ReactionLearner history restored: 4 real samples
+✅ ReactionLearner attached (4 real samples)
+✅ Scaler loaded
+✅ Loaded 782 feedback records from feedback_db.pkl
+🔒 Frozen TEST molecules: 75
+✅ Restored persisted split: 612 train, 81 validation, 89 test
+✅ Loaded 766 error records from error_history.pkl
+✅ Loaded metrics log with 777 entries
+✅ Loaded solvent offsets from metadata.json
+✅ Model loaded (old architecture adapted to new UVVisNN)
+✅ Learned-artifact provenance verified: Artifact provenance verified
+✅ Residual corrector loaded
+✅ Solvent learner loaded
+✅ Ensemble loaded
+✅ Outlier detector loaded
+✅ Deep SVDD loaded
+✅ Chemistry Memory loaded
+✅ MetaCombiner loaded
+✅ Conformational corrector loaded
+✅ Hückel predictor loaded
+✅ Kamlet–Taft model loaded
+✅ e3nn loaded
+✅ Applicability Domain model loaded
+✅ Similarity Index rebuilt from TRAIN data only: 612 molecules
+✅ Chromophore SMARTS dictionary loaded (1338 entries)
+✅ Empirical corrector loaded
+✅ DR‑CNN model loaded
+
+📋 Available Solvents (enter the ID code):
+  01. water
+  02. ethanol
+  03. methanol
+  04. acetonitrile
+  05. dmso
+  06. acetone
+  07. chloroform
+  08. dichloromethane
+  09. toluene
+  10. hexane
+  11. diethyl_ether
+  12. ethyl_acetate
+  13. isopropanol
+  14. butanol
+  15. pentane
+  16. cyclohexane
+  17. benzene
+  18. thf
+  19. dioxane
+  20. pyridine
+  21. formamide
+  22. nitromethane
+  23. dmf
+  24. mek
+  25. n_propanol
+  26. tert_butanol
+  27. dma
+  28. nmp
+  29. dichloroethane
+  30. carbon_tetrachloride
+  31. anisole
+  32. phenol
+  33. water_0.1M_HCl
+  34. water_1.0M_HCl
+  35. water_0.01M_HCl
+  36. water_0.1M_HNO3
+  37. water_0.1M_H2SO4
+  38. water_0.01M_H2SO4
+  39. water_0.1M_acetic
+  40. water_0.1M_NaOH
+  41. water_0.01M_NaOH
+  42. water_1.0M_NaOH
+  43. water_0.1M_KOH
+  44. water_0.1M_NaHCO3
+  45. water_0.1M_Na2CO3
+  46. ammonium_chloride_0.1M
+  47. ammonium_chloride_1.0M
+  48. ammonium_hydroxide_0.1M
+  49. ammonium_hydroxide_1.0M
+  50. ammonium_acetate_0.1M
+  51. ammonium_carbonate_0.1M
+  52. phosphate_pH_7
+  53. phosphate_pH_8
+  54. phosphate_pH_9
+  55. acetate_pH_4
+  56. acetate_pH_5
+  57. tris_pH_7
+  58. tris_pH_8
+  59. tris_pH_9
+  60. citrate_pH_3
+  61. citrate_pH_5
+  62. borate_pH_8
+  63. borate_pH_9
+  64. borate_pH_10
+  65. carbonate_pH_9
+  66. carbonate_pH_10
+  67. nacl_0.9%
+  68. nacl_0.1M
+  69. kcl_0.1M
+  70. pbs_ph_7
+  71. pbs_ph_8
+  72. water_methanol_50_50
+  73. water_acetonitrile_50_50
+  74. water_ethanol_50_50
+  75. water_ethanol_25_75
+  76. water_ethanol_75_25
+  77. ethanol_methanol_50_50
+  78. water_isopropanol_50_50
+  79. water_acetone_50_50
+  80. water_dmf_50_50
+  81. water_dmso_50_50
+  82. water_thf_50_50
+  83. methanol_acetonitrile_50_50
+  84. ethanol_acetonitrile_50_50
+  85. water_ethanol_acidic
+  86. water_ethanol_basic
+  87. ethanol_acidic
+  88. ethanol_basic
+  89. 95_percent_ethanol
+  90. glycerol
+  91. ethylene_glycol
+  92. propylene_glycol
+  93. propylene_carbonate
+  94. gamma_butyrolactone
+  95. 2_methoxyethanol
+  96. 2_ethoxyethanol
+  97. diethylene_glycol
+  98. triethylene_glycol
+  99. peg_200
+  100. peg_400
+Enter solvent code: 02
+✅ Solvent: Ethanol (pH=7.0)
+pH (default 7.0): 7.0
+Temperature K (default 298.15): 300.0
+Concentration M (default 0.01): 0.01
+
+📤 Upload SDF file:
+Sudan Brown RR.sdf
+Sudan Brown RR.sdf(n/a) - 6232 bytes, last modified: 10/31/2026 - 100% done
+Saving Sudan Brown RR.sdf to Sudan Brown RR (1).sdf
+
+🔬 Run TD‑DFT for each molecule? (y/n, slow!): n
+🔄 Use iterative refinement? Enter number of iterations (0 to skip, default 1): 2
+
+🧪 Processing 1 molecules...
+AD for 62608: similarity=0.372, iso=0.285, status=Low
+   ℹ️ Score 1.00 but SMARTS produced no product — ignoring.
+   🧠 Chemistry Memory: +6 nm (familiarity=0.39)
+   ✅ Using analogue λmax: 517 nm (sim=0.544)
+   🧠 DR‑CNN prediction: 355 nm (conf=0.78)
+   🧠 e3nn prediction: 258 nm (conf=0.13)
+   🧮 Hückel prediction: 340 nm (conf=0.00)
+   🔧 Meta residual correction: +0.4 nm
+   🧩 Meta‑Combiner: 454.5 nm | analogue: 517.0 nm (sim=0.544)
+   ⭐ Analogue prior blend: 0.3 analogue / 0.7 meta
+   🧠 Memory corrected: +6 nm
+  Iteration 1: λmax = 478.5 nm
+   ℹ️ Score 1.00 but SMARTS produced no product — ignoring.
+   🧠 Chemistry Memory: +6 nm (familiarity=0.39)
+   ✅ Using analogue λmax: 517 nm (sim=0.544)
+   🧠 DR‑CNN prediction: 355 nm (conf=0.78)
+   🧠 e3nn prediction: 258 nm (conf=0.13)
+   🧮 Hückel prediction: 340 nm (conf=0.00)
+   🔧 Meta residual correction: +0.4 nm
+   🧩 Meta‑Combiner: 454.5 nm | analogue: 517.0 nm (sim=0.544)
+   ⭐ Analogue prior blend: 0.3 analogue / 0.7 meta
+   🧠 Memory corrected: +6 nm
+  Iteration 2: λmax = 477.5 nm
+   ℹ️ Score 1.00 but SMARTS produced no product — ignoring.
+   🧠 Chemistry Memory: +6 nm (familiarity=0.39)
+   ✅ Using analogue λmax: 517 nm (sim=0.544)
+   🧠 DR‑CNN prediction: 355 nm (conf=0.78)
+   🧠 e3nn prediction: 258 nm (conf=0.13)
+   🧮 Hückel prediction: 340 nm (conf=0.00)
+   🔧 Meta residual correction: +0.4 nm
+   🧩 Meta‑Combiner: 454.5 nm | analogue: 517.0 nm (sim=0.544)
+   ⭐ Analogue prior blend: 0.3 analogue / 0.7 meta
+   🧠 Memory corrected: +6 nm
+1. 62608: λmax = 478.0 nm (confidence: 0.02)
+
+============================================================
+SIMULATION RESULTS
+============================================================
+
+--- Top 5 Absorbance Peaks for Mixture ---
+Wavelength (nm)	Absorbance	Transmittance
+0	478.5	0.010081	0.977055
+1	540.5	0.001196	0.997249
+2	406.5	0.000619	0.998575
+3	565.5	0.000208	0.999522
+4	374.0	0.000092	0.999788
+
+========================================
+FEEDBACK COLLECTION
+========================================
+Collect feedback? (y/n): y
+
+--- 62608 (confidence: 0.02) ---
+Predicted λmax = 478.0 nm
+  📌 Based on analogue: 19119 (λmax=517 nm)
+  Chromophore features: Base: benzene, Base: naphthalene, Base: azo_trans, Base: azo_general, Steric Penalty: ortho_di_sub_benzene
+Chromophore Family: novel/unknown (novelty: 0.85)
+  Nearest analogue: 19119 (λmax=517 nm, sim=0.544)
+
+Correct? (y/n): n
+Enter actual λmax: 452
+📂 Data role (train / validation / test) [train]: test
+📝 Feedback recorded: error = 26.0 nm (role=test)
+[Operational Metrics] MAE: 55.81 nm, RMSE: 107.46 nm, R²: 0.421, SEP: 110.25, RPD: 1.31, CCC: 0.562, ME: -23.46 nm (last 20 feedback records)
+⚠️ 76 TEST molecule(s) are frozen. Retraining only on TRAIN data.
+✅ Primary NN retrained.
+✅ Solvent learner trained.
+✅ CatBoost trained.
+✅ Deep SVDD trained.
+🧪 Training Hückel predictor...
+✅ Hückel predictor trained on 611 samples.
+🧪 Training RadialMLPPredictor...
+✅ RadialMLP trained on 611 molecules.
+🔄 Generating OOF predictions...
+✅ RadialMLP trained on 489 molecules.
+✅ RadialMLP trained on 488 molecules.
+✅ RadialMLP trained on 489 molecules.
+✅ RadialMLP trained on 489 molecules.
+✅ RadialMLP trained on 489 molecules.
+✅ Accuracy-first MetaCombiner trained.
+✅ MetaCombiner retained: OOF MAE is at least as good as the best base model.
+✅ MetaCombiner trained on OOF (5 features).
+✅ Residual corrector trained.
+✅ ResidualCorrector trained on OOF META residuals (actual − meta).
+✅ DR‑CNN trained successfully.
+✅ Conformational corrector trained.
+✅ Conformational corrector trained on 508 shapes.
+✅ Kamlet–Taft model fitted.
+✅ Kamlet–Taft model fitted on training data.
+✅ Applicability Domain fitted on 612 molecules.
+✅ Applicability Domain fitted on training data.
+
+🔄 Updating manifest to match current data roles...
+✅ Manifest updated in memory (will be saved later).
+
+--- LOCKED TEST BENCHMARK ---
+Number of samples (n):              90
+Mean Absolute Error (MAE):          33.96 nm
+Root Mean Squared Error (RMSE):     42.97 nm
+Coefficient of Determination (R²):   0.862
+Standard Error of Prediction (SEP): 43.21 nm
+Ratio of Performance to Deviation (RPD): 2.69
+Concordance Correlation Coefficient (CCC): 0.917
+Mean Error (ME / bias):             2.81 nm
+Normalized MAE Score:               0.915
+
+Average error (last 20): 60.0 nm
+Full metrics (last 20):
+  n: 20
+  Mean Absolute Error (MAE): 55.812
+  Root Mean Squared Error (RMSE): 107.459
+  Coefficient of Determination (R²): 0.421
+  Standard Error of Prediction (SEP): 110.251
+  Ratio of Performance to Deviation (RPD): 1.314
+  Concordance Correlation Coefficient (CCC): 0.562
+  Mean Error (ME): -23.462
+  Normalized MAE Score: 0.860
+
+Run detailed evaluation by solvent, wavelength region, and chemical class? (y/n): y
+
+--- Evaluation by Solvent ---
+          Group  n  MAE (nm)  RMSE (nm)    R²
+       methanol 62     54.11      89.28 -0.08
+        ethanol 45     42.67      69.24  0.70
+           dmso  4     10.00      20.00  0.94
+        acetone  2     47.50      67.18 -0.27
+         hexane  5     56.80      82.24  0.35
+     chloroform  4     27.88      33.75  0.91
+  diethyl_ether  5     82.66     113.94 -0.97
+   acetonitrile  5     45.20      50.70 -3.63
+        toluene  3     99.00     108.86 -0.48
+dichloromethane  2    116.84     129.07 -2.55
+    cyclohexane 13     37.03      39.65  0.12
+       pbs_ph_7  4     20.33      23.22  0.95
+          water 11     34.24      87.46  0.42
+
+
+--- Evaluation by Wavelength Region ---
+  Group   n  MAE (nm)  RMSE (nm)     R²
+300-400  29     56.76      85.70  -9.19
+200-300 104     28.06      49.11  -3.10
+600-700   6    157.75     191.42 -50.22
+400-500  24     96.25     115.94 -26.68
+500-600   8     86.47     127.78 -30.74
+
+
+--- Evaluation by Chemical Class (worst 15 by MAE) ---
+                                         Group  n  MAE (nm)  RMSE (nm)        R²
+                          Base: methylene_blue  2    178.00     208.55  -2717.28
+                               analogue_253193  2    170.19     170.19 -12872.61
+             Steric Penalty: bulky_diene_twist  3    166.46     166.55 -13867.71
+                        Conjugation: +26 atoms  4    144.84     149.68    -22.66
+                        Conjugation: +21 atoms  3    144.67     157.93    -50.75
+                 Inductive Effect: chloro_aryl  3    144.33     155.12     -1.74
+                       no_chromophore_detected  2    132.00     186.68     -0.91
+                              analogue_5479494  2    119.00     134.93    -30.61
+                        Conjugation: +14 atoms  2    118.50     133.51    -78.22
+                                 Base: pyrrole  6    113.44     137.35    -59.23
+Conjugation: +14 atoms (1.67 nm/atom, rings=4)  2    108.62     109.07     -3.07
+    Steric Penalty: trisubstituted_double_bond  5    105.14     127.92    -44.34
+                        Conjugation: +20 atoms  3    102.33     104.81     -6.54
+       Steric Penalty: tetrasubstituted_alkene 17    101.94     120.63     -2.87
+         Steric Penalty: trisubstituted_alkene 17    101.94     120.63     -2.87
+
+--- Evaluation by Chemical Class (best 15 by MAE) ---
+                                        Group  n  MAE (nm)  RMSE (nm)     R²
+                                analogue_7081  2     11.25      11.27 -11.04
+                                analogue_1049  3     11.00      11.00   0.00
+                               analogue_41206  4     10.50      10.51   0.00
+Conjugation: +8 atoms (2.22 nm/atom, rings=2)  5      9.60       9.78   0.18
+                                 Base: purine  3      6.83       8.29 -76.34
+Conjugation: +4 atoms (2.86 nm/atom, rings=2)  3      6.83       8.29 -76.34
+                                analogue_7099  2      6.58       9.31  -1.62
+              Insulator: methylene_bridge_iso  5      5.40      10.09  -0.48
+                  Insulator: ether_bridge_iso  2      3.00       4.24   0.98
+                        Conjugation: +9 atoms  2      2.50       3.54   0.89
+                       Conjugation: +18 atoms  2      0.00       0.00   1.00
+                                analogue_4044  4      0.00       0.00   0.00
+                                analogue_4114 18      0.00       0.00   0.00
+                                analogue_1060  4      0.00       0.00   0.00
+                             analogue_6339351  4      0.00       0.00   0.00
+Total chemical classes: 111
+✅ Detailed evaluation completed.
+
+Run ablation study? (y/n): y
+
+📊 Ablation data source:
+  1) Locked test set (current held-out molecules)
+  2) Last 20 feedback records (most recent corrections)
+  3) Random 10 from the last 20 feedback records
+Enter choice (1/2/3): 2
+✅ Using all 20 records from the last 20 feedback entries.
+
+--- Ablation Results ---
+Base NN: MAE=21.50, RMSE=34.89, R2=0.939
+NN + Solvent: MAE=21.48, RMSE=35.18, R2=0.938
+NN + Residual: MAE=20.07, RMSE=33.50, R2=0.944
+NN + Conform: MAE=21.20, RMSE=35.22, R2=0.938
+NN + Solvent + Residual: MAE=20.90, RMSE=34.16, R2=0.941
+Full (no KT): MAE=20.68, RMSE=34.39, R2=0.941
+Full + KT: MAE=21.15, RMSE=34.26, R2=0.941
+
+Save all learning data to Google Drive? (y/n): y
+
+💾 Saving to Google Drive...
+Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount("/content/drive", force_remount=True).
+✅ Model saved
+✅ Scaler, feedback, errors, metrics, metadata saved
+✅ Learned-artifact provenance manifest saved
+✅ Residual corrector saved
+✅ Solvent learner saved
+✅ Ensemble saved
+✅ Outlier detector saved
+✅ Hückel predictor saved
+✅ e3nn saved
+✅ Deep SVDD saved
+✅ Similarity Index saved
+✅ Chemistry Memory saved
+✅ MetaCombiner saved
+✅ Conformational corrector saved
+✅ DR‑CNN weights saved
+✅ DR‑CNN tokenizer saved
+✅ Chromophore SMARTS dictionary saved
+✅ Kamlet–Taft model saved
+✅ Applicability Domain model saved
+✅ Empirical corrector saved
+✅ ReactionLearner saved 
+✅ ReactionLearner saved (4 real samples)
+
+✅ Done!
