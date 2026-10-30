@@ -1,12 +1,12 @@
 # Spectra ML v2.0
 
-**Spectra ML** is a computational tool for estimating molecular UV–Visible absorption maxima (lambda_max (maximum absorption wavelength)) and generating modelled spectra under selected solvent and experimental-condition inputs. The implementation combines cheminformatics, machine-learning predictors, analogue retrieval, empirical spectral rules, optional quantum-chemical calculations, condition-dependent corrections, uncertainty-related scoring, and visualization in a Google Colab notebook.
+**Spectra ML** is a computational tool for estimating molecular UV–Visible absorption maxima (λ max (maximum absorption wavelength)) and generating modelled spectra under selected solvent and experimental-condition inputs. The implementation combines cheminformatics, machine-learning predictors, analogue retrieval, empirical spectral rules, optional quantum-chemical calculations, condition-dependent corrections, uncertainty-related scoring, and visualization in a Google Colab notebook.
 
 - **Version:** `v2.0`
 - **Interface:** Google Colab / Jupyter Notebook
 - **Primary contact:** [dkbhatt1307@gmail.com](mailto:dkbhatt1307@gmail.com)
 - **Secondary contact:** [uv.vis.spectra.ml@gmail.com](mailto:uv.vis.spectra.ml@gmail.com)
-- **Notebook:** [Open Spectra ML v2 in GitHub](https://github.com/bhattdha713/Spectra-ML-v2/blob/main/Spectra%20ML%20v_2.ipynb)
+- **Notebook:** [Spectra ML v2 google colab](https://drive.google.com/file/d/1M3YMe4WKXlD8cszug6jGbUvHJmmOPIIY/view?usp=drive_link)
 - **Repository:** [Spectra ML v2](https://github.com/bhattdha713/Spectra-ML-v2)
 
 ## Overview
@@ -39,11 +39,25 @@ The software is intended for computational investigation, method development, an
 
 ## Screenshots and example outputs
 
-No v2-specific screenshot or verified example-run output is currently included in this repository README. Add screenshots from a reproducible notebook run here when available, together with the molecule, solvent, pH, temperature, concentration, optional calculation settings, predicted lambda_max, and confidence/applicability output.
+### Example 1 — Nifuroxazide in ethanol
+
+<img width="1072" height="525" alt="Nifuroxazide in ethanol" src="https://github.com/user-attachments/assets/4339eda7-5217-4b76-b500-e874019033d0" />
+
+The supplied run used ethanol, pH 7.0, temperature 300 K, concentration 0.01 M, TD-DFT disabled, and two refinement iterations. The log reports a final predicted λ max (maximum absorption wavelength) of approximately **328.0 nm**, with confidence `0.19`. The Reference λmax is 367 nm. [British Pharmacopoeia (2025), Nifuroxazide](https://nhathuocngocanh.com/bp/nifuroxazide/).
+
+This is an example of one run, not a general performance estimate. The low reported confidence should be retained when interpreting the output.
+
+## Example 2 - Sudan Brown RR in ethanol 
+
+<img width="1072" height="525" alt="Sudan Brown RR in DMF" src="https://github.com/user-attachments/assets/611bd84b-755c-4de1-9d22-ca4c8f3d694c" />
+
+The supplied run used ethanol, pH 7.0, temperature 300 K, concentration 0.01 M, TD-DFT disabled, and two refinement iterations. The log reports a final predicted λ max (maximum absorption wavelength) of approximately **478.5 nm**, with confidence `0.02`. The Reference λmax is 452 nm. [Santa Cruz Biotechnology COA](https://www.scbio.cn/p/fat-brown-rr-6416-57-5).
+
+This is an example of one run, not a general performance estimate. The low reported confidence should be retained when interpreting the output.
 
 ## How to run the notebook
 
-1. Open the [Spectra ML v2 notebook](https://github.com/bhattdha713/Spectra-ML-v2/blob/main/Spectra%20ML%20v_2.ipynb) in GitHub and open it in Google Colab (or use a compatible Jupyter environment).
+1. Open the [Spectra ML v2 notebook](https://drive.google.com/file/d/1M3YMe4WKXlD8cszug6jGbUvHJmmOPIIY/view?usp=drive_link) in GitHub and open it in Google Colab (or use a compatible Jupyter environment).
 2. Run the dependency-installation and import cell, followed by the notebook cells in order.
 3. At the model-source prompt, choose one of the following:
    - `1` — attempt to load the shared model from its configured central Google Drive location.
@@ -288,5 +302,5 @@ The core project idea and its inspiration are original to the project author. Ch
 - **Software:** Spectra ML
 - **Version:** v2.0
 - **GitHub:** [Spectra ML v2](https://github.com/bhattdha713/Spectra-ML-v2)
-- **Notebook:** [Spectra ML v2 Jupyter Notebook](https://github.com/bhattdha713/Spectra-ML-v2/blob/main/Spectra%20ML%20v_2.ipynb)
+- **Notebook:** [Spectra ML v2 Jupyter Notebook](https://drive.google.com/file/d/1M3YMe4WKXlD8cszug6jGbUvHJmmOPIIY/view?usp=drive_link)
 - **Contributors:** Dhairya Bhatt, Avani Doshi, Mishti Tekwani
