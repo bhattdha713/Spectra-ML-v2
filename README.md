@@ -13,7 +13,7 @@
 
 ## Overview
 
-Spectra ML accepts molecular structures in SDF format and user-selected conditions (solvent, pH, temperature, and concentration). It estimates a primary lambda_max (maximum absorption wavelength), generates a simulated spectrum, and can display confidence-related and applicability-domain information. The notebook also supports solute–solvent interaction reporting, reaction-product candidate analysis, reference-feedback collection, model retraining, locked-test evaluation, subgroup analysis, and ablation studies.
+Spectra ML accepts molecular structures in SDF format and user-selected conditions (solvent, pH, temperature, and concentration). It estimates a primary lambda max (maximum absorption wavelength), generates a simulated spectrum, and can display confidence-related and applicability-domain information. The notebook also supports solute–solvent interaction reporting, reaction-product candidate analysis, reference-feedback collection, model retraining, locked-test evaluation, subgroup analysis, and ablation studies.
 
 The v2 workflow extends the integrated prediction approach with an adaptive reaction engine, a reaction-feasibility learner, an updated meta-combination of base predictors, and additional interaction and explainability outputs. Optional quantum-chemical calculations and iterative refinement can be selected during execution.
 
